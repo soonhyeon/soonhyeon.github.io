@@ -17,11 +17,12 @@
     <section class="intro">
         <h2>📌 프로젝트 소개</h2>
         <p>
-            Noisy-ArcMix는 Anomalous Sound Detection(ASD)을 위한 새로운 학습 기법으로, 
-            Additive Noisy Angular Margin Loss와 Mixup을 결합하여 일반적인 사운드 데이터를 더 강건하게 학습할 수 있도록 설계되었습니다.
-        </p>
-        <p>
-            본 프로젝트는 ICASSP 2024에서 발표되었으며, 코드와 데이터는 오픈소스로 공개되어 있습니다.
+            Noisy-ArcMix significantly improves the compactness of intra-class distribution through training with virtually synthesized samples near the normal data distribution.
+            More importantly, we observed that the mingling effect between normal and anomalous samples can be reduced further by Noisy-ArcMix, which gains generalization ability 
+            through the use of inconsistent angular margins for corrupted label prediction.
+            In addition to Noisy-ArcMix, we introduce a new input feature, temporally attended log-Mel spectrogram (TAgram), derived from a temporal attention block. TAgram includes 
+            the temporal attention weights broadcasted to spectrogram features, which helps a model to focus on the important temporal regions for capturing crucial features.
+            This repository contains the implementation used in our paper <a href="https://ieeexplore.ieee.org/abstract/document/10447764">IEEE Xplore</a>.
         </p>
     </section>
 
